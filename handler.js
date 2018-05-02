@@ -26,7 +26,7 @@ const handlers = {
         this.emit('AMAZON.StopIntent');
     },
     'AMAZON.StopIntent': function() {
-        this.emit('AMAZON.StopIntent');
+        this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
         this.emit(':ask', 'Alexaがチャーハンを作ってくれます。チャーハンを炒めてと言ってください。');
