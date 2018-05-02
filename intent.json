@@ -1,0 +1,42 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "チャーハン",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "play",
+                    "slots": [],
+                    "samples": [
+                        "料理して",
+                        "調理して",
+                        "炒めて",
+                        "料理",
+                        "再生",
+                        "作って"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
