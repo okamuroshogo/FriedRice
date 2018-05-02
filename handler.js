@@ -16,6 +16,11 @@ const handlers = {
         this.response.audioPlayerPlay('REPLACE_ALL', audioUrl, audioUrl, null, 0);
         this.emit(':responseReady');
     },
+    'play': function () {
+        const audioUrl = 'https://s3-ap-northeast-1.amazonaws.com/alexa-fried-rice/nc121703.mp3';
+        this.response.audioPlayerPlay('REPLACE_ALL', audioUrl, audioUrl, null, 0);
+        this.emit(':responseReady');
+    },
     'AMAZON.ResumeIntent': function () {
         this.emit('PlayAudio');
     },
@@ -26,6 +31,7 @@ const handlers = {
         this.emit('AMAZON.StopIntent');
     },
     'AMAZON.StopIntent': function() {
+        this.response.audioPlayerStop();
         this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
