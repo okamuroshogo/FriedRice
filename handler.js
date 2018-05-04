@@ -17,9 +17,7 @@ const handlers = {
         this.emit(':responseReady');
     },
     'play': function () {
-        const audioUrl = 'https://s3-ap-northeast-1.amazonaws.com/alexa-fried-rice/nc121703.mp3';
-        this.response.audioPlayerPlay('REPLACE_ALL', audioUrl, audioUrl, null, 0);
-        this.emit(':responseReady');
+        this.emit('PlayAudio');
     },
     'AMAZON.ResumeIntent': function () {
         this.emit('PlayAudio');
@@ -38,7 +36,7 @@ const handlers = {
         this.emit(':ask', 'Alexaがチャーハンを作ってくれます。チャーハンを炒めてと言ってください。');
     },
     'Unhandled': function () {
-        this.emit('AMAZON.HelpIntent');
+        this.response.audioPlayerStop();
     },
 };
 
