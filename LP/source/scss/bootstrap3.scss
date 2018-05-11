@@ -1,0 +1,51 @@
+
+/* bootstrap-sass */
+@import "_variables-sample";
+@import "bootstrap";
+
+/* CSSのインポート 拡張子は省略すること */
+@import "addsample";
+
+/*
+#overview
+スタイルガイドサンプル
+
+サンプルファイルです
+*/
+
+/*#styleguide
+サンプル見出し1
+
+サンプルの見出しスタイル
+
+```
+<h1>見出し1</h1>
+```
+*/
+/*
+#colors
+
+@brand-primary #337ab7
+@brand-success #5cb85c
+@brand-info #5bc0de
+*/
+
+/* Bootstrap Theme exapmle */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}

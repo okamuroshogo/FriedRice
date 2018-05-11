@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap3-SASS-template",
+  "description": "Basic template for a new Bootstrap 3 SASS project.",
+  "main": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
