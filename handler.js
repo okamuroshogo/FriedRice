@@ -30,11 +30,36 @@ const handlers = {
     },
     'AMAZON.StopIntent': function() {
         this.response.audioPlayerStop();
-        this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':ask', 'Alexaがチャーハンを作ってくれます。チャーハンを炒めてと言ってください。');
+        this.emit(':tell', 'Alexaがチャーハンを作ってくれます。チャーハンを炒めてと言ってください。');
     },
+    'AMAZON.NextIntent': function () {
+        this.emit(':tell', 'まだ、半焼けです');
+    },
+    'AMAZON.StartOverIntent': function () {
+        this.emit(':tell', 'そんな、もったいない');
+    },
+    'AMAZON.ShuffleOnIntent': function () {
+        this.emit(':tell', 'たくさん炒めますね');
+    },
+    'AMAZON.ShuffleOffIntent': function () {
+        this.emit(':tell', '控えめに炒めますね');
+    },
+    'AMAZON.LoopOnIntent': function () {
+        this.emit(':tell', 'そんなに食べれます？');
+    },
+    'AMAZON.LoopOffIntent': function () {
+        this.emit(':tell', '一生懸命作ります');
+    },
+    'AMAZON.PreviousIntent': function () {
+        this.emit(':tell', '前の人のチャーハンがそんなに美味しかったですか、そうですか');
+    },
+    'AMAZON.RepeatIntent': function () {
+        this.emit(':tell', 'たくさん食べたいんですね');
+    },
+
+
     'Unhandled': function () {
         this.response.audioPlayerStop();
     },
