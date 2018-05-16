@@ -30,6 +30,7 @@ const handlers = {
     },
     'AMAZON.StopIntent': function() {
         this.response.audioPlayerStop();
+        this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
         this.emit(':tell', 'Alexaがチャーハンを作ってくれます。チャーハンを炒めてと言ってください。');
