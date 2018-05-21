@@ -18,5 +18,5 @@ AlexaとGoogleHomeの２つのスマートスピーカーで、
 - 公開中: https://www.amazon.co.jp/dp/B07CT4HQ1M/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1526634866&sr=1-1&keywords=%E3%83%95%E3%83%A9%E3%82%A4%E3%83%91%E3%83%B3
 
 ## GoogleHome
-- 申請中: ...
+- 公開中
 
